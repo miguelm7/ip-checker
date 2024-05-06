@@ -1,0 +1,3 @@
+#crontab /proc to write to docker logs
+* * * * * /usr/local/bin/python /app/ip_checker.py > /proc/1/fd/1 2>/proc/1/fd/2
+#end of line
